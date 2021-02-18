@@ -24,6 +24,16 @@ $app->get('/', function (Request $request, Response $response) {
 });
 
 /**
+ * Basic simple route
+ */
+$app->get('/reference', function (Request $request, Response $response) {
+    return $this->get('view')->render($response, 'reference.html');
+});
+$app->get('/kontakty', function (Request $request, Response $response) {
+    return $this->get('view')->render($response, 'kontakt.html');
+});
+
+/**
  * Basic route using Controller TestController with method test()
  */
 $app->get('/test', Phisolutions\Controllers\TestController::class . ':test');
