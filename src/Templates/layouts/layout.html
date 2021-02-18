@@ -6,6 +6,7 @@
 		<meta name="description" content="Popis webu. DOPLNIT" />
 		<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 		<link rel="stylesheet" href="assets/css/tailwind.css" type="text/css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css" integrity="sha512-kwJUhJJaTDzGp6VTPBbMQWBFUof6+pv0SM3s8fo+E6XnPmVmtfwENK0vHYup3tsYnqHgRDoBDTJWoq7rnQw2+g==" crossorigin="anonymous" />
 		<title>Tiskárna Zaplatílek</title>
 	</head>
 	<body>
@@ -45,13 +46,13 @@
 							id="mobile-nav"
 						>
 							<div class="flex flex-col divide-y w-full">
-								<a href="#" class="text-2xl font-medium text-white pl-2 py-1">
+								<a href="/" class="text-2xl font-medium text-white pl-2 py-1">
 									Domů
 								</a>
-								<a href="#" class="text-2xl font-medium text-white pl-2 py-1">
+								<a href="/reference" class="text-2xl font-medium text-white pl-2 py-1">
 									Reference
 								</a>
-								<a href="#" class="text-2xl font-medium text-white pl-2 py-1">
+								<a href="/kontakty" class="text-2xl font-medium text-white pl-2 py-1">
 									Kontakty
 								</a>
 							</div>
@@ -60,19 +61,19 @@
 					<nav class="hidden lg:flex space-x-10">
 						<div class="relative">
 							<a
-								href="#"
+								href="/"
 								class="text-base font-medium text-gray-500 hover:text-gray-900 mx-2"
 							>
 								Domů
 							</a>
 							<a
-								href="#"
+								href="/reference"
 								class="text-base font-medium text-gray-500 hover:text-gray-900 mx-2"
 							>
 								Reference
 							</a>
 							<a
-								href="#"
+								href="/kontakty"
 								class="text-base font-medium text-gray-500 hover:text-gray-900 mx-2"
 							>
 								Kontakty
@@ -205,6 +206,12 @@
 				</div>
 			</div>
 		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js" integrity="sha512-b4rL1m5b76KrUhDkj2Vf14Y0l1NtbiNXwV+SzOzLGv6Tz1roJHa70yr8RmTUswrauu2Wgb/xBJPR8v80pQYKtQ==" crossorigin="anonymous"></script>
+        <script>
+            lightGallery(document.getElementById('lightgallery'), {
+				selector: '.photo'
+			});
+        </script>
 		<script defer src="assets/js/app.js"></script>
 	</body>
 </html>
