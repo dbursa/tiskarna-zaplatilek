@@ -19,17 +19,17 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 /**
  * Basic simple route
  */
-$app->get('/', function (Request $request, Response $response) {
+$app->get('/tiskarna-zaplatilek/', function (Request $request, Response $response) {
     return $this->get('view')->render($response, 'index.html');
 });
 
 /**
  * Basic simple route
  */
-$app->get('/reference', function (Request $request, Response $response) {
+$app->get('/tiskarna-zaplatilek/reference', function (Request $request, Response $response) {
     return $this->get('view')->render($response, 'reference.html');
 });
-$app->get('/kontakty', function (Request $request, Response $response) {
+$app->get('/tiskarna-zaplatilek/kontakty', function (Request $request, Response $response) {
     return $this->get('view')->render($response, 'kontakt.html');
 });
 
