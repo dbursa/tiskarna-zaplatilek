@@ -1,10 +1,21 @@
 @font-face {
 	font-family: wixFont;
-	src: url('/assets/fonts/DINPro-Regular.otf');
+	src: url('/tiskarna-zaplatilek/assets/fonts/DINPro-Regular.otf')
+		format('truetype');
+}
+
+@font-face {
+	font-family: wixFont-Bold;
+	src: url('/tiskarna-zaplatilek/assets/fonts/DINPro-Bold.otf')
+		format('truetype');
 }
 
 html {
 	font-family: wixFont !important;
+}
+
+h1 {
+	font-family: wixFont-Bold !important;
 }
 
 //mobile navbar
