@@ -1,6 +1,63 @@
+<!-- ALERTS -->
+<!-- ERRORS -->
+<div id="errors-div" class="rounded-md bg-red-50 p-4 mb-6 hidden">
+	<div class="flex">
+		<div class="flex-shrink-0">
+			<!-- Heroicon name: x-circle -->
+			<svg
+				class="h-5 w-5 text-red-400"
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 20 20"
+				fill="currentColor"
+				aria-hidden="true"
+			>
+				<path
+					fill-rule="evenodd"
+					d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+					clip-rule="evenodd"
+				/>
+			</svg>
+		</div>
+		<div class="ml-3">
+			<h3 class="text-sm font-medium text-red-800">
+				Při odesílání formuláře se vyskytly potíže
+			</h3>
+			<div class="mt-2 text-sm text-red-700">
+				<ul id="errors" class="list-disc pl-5 space-y-1"></ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- SUCCESS -->
+<div id="success-div" class="rounded-md bg-green-50 p-4 mb-6 hidden">
+	<div class="flex">
+		<div class="flex-shrink-0">
+			<!-- Heroicon name: check-circle -->
+			<svg
+				class="h-5 w-5 text-green-400"
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 20 20"
+				fill="currentColor"
+				aria-hidden="true"
+			>
+				<path
+					fill-rule="evenodd"
+					d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+					clip-rule="evenodd"
+				/>
+			</svg>
+		</div>
+		<div class="ml-3">
+			<p class="text-sm font-medium text-green-800">
+				Děkujeme. Váš email byl úspěšně odeslán.
+			</p>
+		</div>
+	</div>
+</div>
+
+<!-- FORM -->
 <form
-	action="#"
-	method="POST"
 	class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
 >
 	<div>
@@ -74,7 +131,8 @@
 	</div>
 	<div class="sm:col-span-2">
 		<button
-			type="submit"
+			id="submit"
+			type="button"
 			class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-semibold transition-colors duration-300 border-indigo-600 text-indigo-600 hover:text-white bg-white hover:bg-indigo-600"
 		>
 			Odeslat

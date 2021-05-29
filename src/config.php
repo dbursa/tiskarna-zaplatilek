@@ -5,7 +5,7 @@ return [
      * Application variables, set-up what you need here
      */
     'usingDatabase' => false,
-    'usingMailer' => false,
+    'usingMailer' => true,
     'usingTrelloCms' => false,
     'templateCache' => false,
     'usingCors' => true, // Remember to fill domain below if using this setting
